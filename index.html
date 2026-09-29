@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RajaBandot - Demo UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+
+    <div class="brand">
+      <div class="brand-icon">♞</div>
+      <div>
+        <div class="brand-name">RajaBandot</div>
+        <div class="brand-sub">DEMO UI</div>
+      </div>
+    </div>
+
+    <button class="demo-btn" id="demoBtn">Demo</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Selamat Datang</h1>
+        <p>Contoh tampilan website responsive</p>
+      </div>
+      <button class="refresh-btn" id="refreshBtn">↻ Refresh</button>
+    </section>
+
+    <section class="menu-grid" id="menuGrid">
+      <button class="menu-item" data-name="Semua">
+        <span>▦</span><b>SEMUA</b>
+      </button>
+      <button class="menu-item" data-name="Game">
+        <span>♟</span><b>GAME</b>
+      </button>
+      <button class="menu-item" data-name="Artikel">
+        <span>▤</span><b>ARTIKEL</b>
+      </button>
+      <button class="menu-item" data-name="Media">
+        <span>◉</span><b>MEDIA</b>
+      </button>
+      <button class="menu-item" data-name="Info">
+        <span>⚽</span><b>INFO</b>
+      </button>
+      <button class="menu-item" data-name="Berita">
+        <span>★</span><b>BERITA</b>
+      </button>
+      <button class="menu-item" data-name="Komunitas">
+        <span>♣</span><b>KOMUNITAS</b>
+      </button>
+      <button class="menu-item" data-name="Bantuan">
+        <span>?</span><b>BANTUAN</b>
+      </button>
+      <button class="menu-item" data-name="Tentang">
+        <span>ⓘ</span><b>TENTANG</b>
+      </button>
+    </section>
+
+    <div class="search-box">
+      <input id="searchInput" type="search" placeholder="Cari..." autocomplete="off">
+    </div>
+
+    <section class="link-card">
+      <div class="link-text">
+        <h2>Simpan Link Resmi Kami</h2>
+        <p class="highlight">contoh-domain.test/demo</p>
+
+        <label for="linkSelect">Pilih Link Alternatif:</label>
+        <select id="linkSelect">
+          <option value="contoh-domain.test/demo">contoh-domain.test/demo</option>
+          <option value="demo.example.com">demo.example.com</option>
+          <option value="localhost:5500">localhost:5500</option>
+        </select>
+
+        <button class="copy-btn" id="copyBtn">Salin Link</button>
+        <p class="note">* Tombol di atas hanya untuk demonstrasi fungsi salin.</p>
+      </div>
+
+      <div class="qr-demo">
+        <div class="qr-pattern">
+          <span>▦</span>
+          <span>▣</span>
+          <span>▦</span>
+          <span>▣</span>
+          <span>▦</span>
+          <span>▣</span>
+          <span>▦</span>
+          <span>▣</span>
+          <span>▦</span>
+        </div>
+        <strong>DEMO QR</strong>
+      </div>
+    </section>
+
+    <section class="banner-card">
+      <div class="banner-logo">♞</div>
+      <div>
+        <h2>RAJABANDOT</h2>
+        <p>Demo landing page</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
